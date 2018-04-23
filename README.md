@@ -1,4 +1,4 @@
-# Teaching-HEIGVD-RES-2018-Labo-SMTP
+# HEIGVD-RES-FEE-2018-Labo-SMTP
 
 ## Objectives
 

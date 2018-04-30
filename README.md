@@ -42,8 +42,23 @@ Your repository should contain both the source code of your Java project and you
 Your report MUST include the following sections:
 
 * **A brief description of your project**: if people exploring GitHub find your repo, without a prior knowledge of the RES course, they should be able to understand what your repo is all about and whether they should look at it more closely.
+Ce projet permet de creer des spam à partir d'une liste d'adresse mail et de messages prédéfini. Tous les choix sont paramétrable via le fichier de configuration :
+SMTPServer : désigne le serveur smtp avec lequel on souhaite communiquer
+port :  désigne le port sur lequel on doit écouter (par défaut 25)
+numberofgroup : permet de spécifier le nombre de groupe minimum (0 génération automatique)
+numberofvictim : permet de spécifier le nombre de victime minimum (0 génération automatique)
+mail : permet de spécifier le numéro de mail type désiré (à partir de 1)
+subject : sujet de(s) email(s)
 
 * **Instructions for setting up a mock SMTP server**. The user who wants to experiment with your tool but does not really want to send pranks immediately should be able to use a mock SMTP server. For people who are not familiar with this concept, explain it to them in simple terms. Explain which mock server you have used and how you have set it up.
+Pour pouvoir utiliser MockMock:
+télécharger le .jar
+https://github.com/tweakers-dev/MockMock/blob/master/release/MockMock.jar?raw=true
+puis lancer une invite de commande en tapant:
+java -jar MockMock.jar
+possibilité de changer le noméro de port avec -p, et -h pour changer l'adresse d'écoute de l'interface Web comme ceci:
+java -jar MockMock.jar -p <numéro de port> -h <numéro de port>
+Il suffit de fermer le terminal qui a lancer MockMock afin de terminer le processus.
 
 * **Clear and simple instructions for configuring your tool and running a prank campaign**. If you do a good job, an external user should be able to clone your repo, edit a couple of files and send a batch of e-mails in less than 10 minutes.
 
